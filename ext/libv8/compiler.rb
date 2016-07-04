@@ -3,6 +3,7 @@ require File.expand_path '../compiler/generic_compiler', __FILE__
 require File.expand_path '../compiler/gcc', __FILE__
 require File.expand_path '../compiler/clang', __FILE__
 require File.expand_path '../compiler/apple_llvm', __FILE__
+require File.expand_path '../compiler/lcc', __FILE__
 
 module Libv8
   module Compiler
@@ -13,6 +14,7 @@ module Libv8
       when /^Apple LLVM\b/ then AppleLLVM
       when /\bclang\b/i then Clang
       when /^gcc/i then GCC
+      when /^lcc/i then LCC
       else GenericCompiler
       end
     end

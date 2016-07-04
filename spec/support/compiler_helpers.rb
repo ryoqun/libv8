@@ -10,6 +10,9 @@ module CompilerHelpers
     },
     :apple_llvm => {
       '5.1' => %Q{Configured with: --prefix=/Applications/Xcode.app/Contents/Developer//usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/c++/4.2.1\nApple LLVM version 5.1 (clang-503.0.38) (based on LLVM 3.4svn)\nTarget: x86_64-apple-darwin14.0.0\nThread model: posix\n}
+    },
+    :lcc => {
+      '1.20.14' => %Q{lcc:1.20.14:Dec-29-2015:***-linux\ngcc (GCC) 4.4.0 compatible\n}
     }
   }
 
