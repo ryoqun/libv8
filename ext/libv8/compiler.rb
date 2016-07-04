@@ -33,8 +33,8 @@ module Libv8
       case version_string_of(compiler_name)
       when /^Apple LLVM\b/ then AppleLLVM
       when /\bclang\b/i then Clang
-      when /^gcc/i then GCC
       when /^lcc/i then LCC
+      when /^gcc/i then GCC
       else GenericCompiler
       end
     end
